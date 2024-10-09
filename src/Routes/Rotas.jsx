@@ -4,6 +4,7 @@ import Sobre from "../Pages/Sobre/Sobre";
 import Navegacao from "../Components/Navegacao/Navegacao";
 import Projetos from "../Pages/TelaInicial/TelaInicial";
 import Contatos from "../Pages/Contatos/Contatos";
+import Experiências from "../Pages/Experiencias/Experiencias";
 
 const Rotas = () => {
     return <>
@@ -14,6 +15,7 @@ const Rotas = () => {
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/projetos" element={<Projetos />} />
                 <Route path="/contatos" element={<Contatos />} />
+                <Route path="/experiencias" element={<Experiências />} />
             </Routes>
         </Router>
     </>

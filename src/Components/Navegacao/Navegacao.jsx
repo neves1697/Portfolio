@@ -6,12 +6,12 @@ const Navegacao = () => {
 
     return <>
         <nav className="nav">
-            <a href="/home" className="icon">Início</a>
+            <Link to={"/home"}>Início</Link>
             <ul>
-                <li > <a href="/projetos"> Projetos </a> </li>
-                <li > <a href="/experiencias"> Experiências </a> </li>
-                <li> <a href="/sobre"> Sobre mim </a> </li>
-                <li> <a href="/contatos"> Contatos </a> </li>
+                <li> <Link to={"/projetos"}> Projetos </Link> </li>
+                <li> <Link to={"/experiencias"}> Experiências </Link> </li>
+                <li> <Link to={"/sobre"}>Sobre mim</Link> </li>
+                <li> <Link to={"/contatos"}>Contatos</Link> </li>
             </ul>
         </nav>
     </>
