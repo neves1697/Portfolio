@@ -51,7 +51,7 @@ body {
 
 .nav li:hover {
     background-color: rgb(19, 18, 18);
-    border-radius: 10%;
+    border-radius: 12%;
 }
 
 .nav a:hover::after {
