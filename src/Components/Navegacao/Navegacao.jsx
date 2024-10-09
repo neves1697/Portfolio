@@ -1,17 +1,26 @@
 import React from "react";
 import "../../Styles/Navegacao.css"
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const Navegacao = () => {
+    const location = useLocation();
 
     return <>
         <nav className="nav">
-            <Link to={"/home"}>Início</Link>
+            <Link to={"/home"} className="icone">Início</Link>
             <ul>
-                <li> <Link to={"/projetos"}> Projetos </Link> </li>
-                <li> <Link to={"/experiencias"}> Experiências </Link> </li>
-                <li> <Link to={"/sobre"}>Sobre mim</Link> </li>
-                <li> <Link to={"/contatos"}>Contatos</Link> </li>
+                <li>
+                    <Link to={"/projetos"} className={location.pathname === "/projetos" ? "active" : ""} > Projetos </Link>
+                </li>
+                <li>
+                    <Link to={"/experiencias"} className={location.pathname === "/experiencias" ? "active" : ""}> Experiências </Link>
+                </li>
+                <li>
+                    <Link to={"/sobre"} className={location.pathname === "/sobre" ? "active" : ""} >Sobre mim</Link>
+                </li>
+                <li>
+                    <Link to={"/contatos"} className={location.pathname === "/contatos" ? "active" : ""} >Contatos</Link>
+                </li>
             </ul>
         </nav>
     </>

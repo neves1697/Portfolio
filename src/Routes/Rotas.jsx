@@ -11,7 +11,7 @@ const Rotas = () => {
         <Router>
             <Navegacao />
             <Routes>
-                <Route path="/" />
+                <Route exact path="/" />
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/projetos" element={<Projetos />} />
                 <Route path="/contatos" element={<Contatos />} />
