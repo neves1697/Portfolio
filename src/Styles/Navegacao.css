@@ -35,13 +35,31 @@ body {
     display: flex;
     padding: 2rem;
     align-items: center;
+    position: relative;
+}
+
+.nav a::after {
+    content: " ";
+    width: 0%;
+    height: 3px;
+    background-color: yellow;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.2s ease-in-out;
+}
+
+.nav li:hover {
+    background-color: rgb(19, 18, 18);
+    border-radius: 10%;
+}
+
+.nav a:hover::after {
+    width: 100%;
 }
 
 .nav li.active {
     background-color: #555;
 }
 
-.nav li:hover {
-    background-color: rgb(39, 36, 36);
-    border-radius: 10%;
-}
+
