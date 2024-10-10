@@ -16,6 +16,7 @@ body {
     align-items: stretch;
     justify-content: space-between;
     padding: 0rem 2rem;
+    /*border: 3px solid rgb(71, 64, 64);*/
 }
 
 .nav ul {
@@ -43,6 +44,7 @@ body {
     background-color: #555; /* Cor do link ativo */
     border-radius: 5%; /* Bordas arredondadas para o link ativo */
     background-position: bottom;
+    /*border: 2px solid rgb(83, 83, 40);*/
 }
 
 /* Efeito de hover */
