@@ -5,15 +5,13 @@ import Projetos from "../Projetos/Projetos";
 const TelaInicial = () => {
     return <>
         <div className="container">
-            <div className="conntainer-fundo">
-                <p>Tela inicial</p>
+            <div className="container-fundo">
+                <div className="container-fotoperfil">
+                    
+                    <div className="foto-perfil"></div>
+                </div>
             </div>
         </div>
-
-        <div>
-            <Projetos />
-        </div>
-
     </>
 }
 

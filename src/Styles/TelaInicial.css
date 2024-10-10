@@ -1,4 +1,4 @@
-/*
+/* efeito de cor de fundo
 @keyframes colorTransition {
     0% {
         background: rgb(19, 18, 18);
@@ -23,21 +23,27 @@
     display: flex;
     justify-content: center;
     flex-direction: row;
-
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgb(19, 18, 18), #052336);
-
-
 }
 
-.conntainer-fundo{
+.container-fundo {
+    display: flex;
     justify-content: center;
-    
     background: linear-gradient(to bottom, rgb(19, 18, 18), #052336);
     width: 100%;
-    height:100% ;
-    
-    
+    height: 100%;
 }
 
+.container-fotoperfil {
+    background: red;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+
+
+}
