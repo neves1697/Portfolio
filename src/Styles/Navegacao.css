@@ -35,6 +35,7 @@ body {
     align-items: center;
     position: relative;
     transition: background-color 0.3s; /* Transição suave para o fundo */
+    border-radius: 10%;
 }
 
 /* Estilo para o link ativo */
