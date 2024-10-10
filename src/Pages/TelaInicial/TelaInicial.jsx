@@ -1,13 +1,12 @@
 import React from "react";
-import "../../Styles/TelaInicial.css";
-import { Link } from "react-router-dom";
+import "../../Styles/TelaInicial.css"
 
-const Projetos = () => {
+const TelaInicial = () => {
     return <>
-        <div>
-            <p>Projetos</p>
+        <div className="container">
+            <p>Tela inicial</p>
         </div>
     </>
 }
 
-export default Projetos;
+export default TelaInicial;
