@@ -1,49 +1,54 @@
-/* efeito de cor de fundo
-@keyframes colorTransition {
-    0% {
-        background: rgb(19, 18, 18);
+/*
+@keyframes rotacao {
+    from {
+        transform: rotate(0deg);
     }
 
-    25% {
-        background: #052336;
-    }
-
-    50% {
-        background: #222527;
-    }
-
-    100% {
-        background: #13212b;
+    to {
+        transform: rotate(360deg);
     }
 }
-
 */
 
 .container {
     display: flex;
+    position: fixed;
     justify-content: center;
     flex-direction: row;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgb(19, 18, 18), #052336);
+    background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
 }
 
 .container-fundo {
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom, rgb(19, 18, 18), #052336);
-    width: 100%;
-    height: 100%;
+    width: inherit;
+    height: inherit;
 }
 
 .container-fotoperfil {
-    background: red;
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 500px;
-    height: 500px;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
 
+.foto-perfil {
+    display: flex;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 250px;
+}
 
+.foto-perfil img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
 }
