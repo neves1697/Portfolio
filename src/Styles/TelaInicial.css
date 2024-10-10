@@ -40,8 +40,8 @@
 .foto-perfil {
     display: flex;
     border-radius: 100%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     justify-content: center;
     overflow: hidden;
     margin-bottom: 250px;
