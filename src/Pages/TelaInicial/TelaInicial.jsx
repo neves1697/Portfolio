@@ -23,16 +23,7 @@ const TelaInicial = () => {
             title: "Projeto 3",
             description: "Descrição do projeto 3",
         },
-        {
-            title: "Projeto 3",
-            description: "Descrição do projeto 3",
-        }, {
-            title: "Projeto 3",
-            description: "Descrição do projeto 3",
-        }, {
-            title: "Projeto 3",
-            description: "Descrição do projeto 3",
-        },
+        
     ];
 
 
