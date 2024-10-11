@@ -19,6 +19,20 @@ const TelaInicial = () => {
             title: "Projeto 3",
             description: "Descrição do projeto 3",
         },
+        {
+            title: "Projeto 3",
+            description: "Descrição do projeto 3",
+        },
+        {
+            title: "Projeto 3",
+            description: "Descrição do projeto 3",
+        }, {
+            title: "Projeto 3",
+            description: "Descrição do projeto 3",
+        }, {
+            title: "Projeto 3",
+            description: "Descrição do projeto 3",
+        },
     ];
 
 
@@ -28,13 +42,12 @@ const TelaInicial = () => {
                 <div className="container-fotoperfil">
                     <div className="foto-perfil">
                         <img src={FotoPerfil} title="Foto de Perfil" alt="Foto de Perfil" />
-
                     </div>
-
-
                 </div>
+
                 {/* Seção dos cards */}
                 <div className="card-container">
+                    <p>teste</p>
                     {cardData.map((card, index) => (
                         <div className="card" key={index}>
                             <h3>{card.title}</h3>
