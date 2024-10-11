@@ -17,8 +17,7 @@ body {
     align-items: stretch;
     justify-content: space-between;
     padding: 0rem 2rem;
-    box-shadow: inset 0 0 0 2px  rgb(71, 64, 64);
-    /*border: 3px solid rgb(71, 64, 64);*/
+    box-shadow: inset 0 0 0 2px rgb(71, 64, 64);
 }
 
 .nav ul {
@@ -45,8 +44,6 @@ body {
 .nav a.active {
     background-color: #555; /* Cor do link ativo */
     border-radius: 5%; /* Bordas arredondadas para o link ativo */
-    background-position: bottom;
-    /*border: 2px solid rgb(83, 83, 40);*/
 }
 
 /* Efeito de hover */
@@ -72,4 +69,22 @@ body {
 
 .nav a:hover::after {
     width: 100%;
+}
+
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column; /* Muda a direção para coluna em mobile */
+        padding: 1rem; /* Ajusta o padding */
+    }
+
+    .nav ul {
+        flex-direction: column; /* Os itens da lista ficam em coluna */
+        width: 100%; /* Largura total da nav */
+    }
+
+    .nav a {
+        padding: 1rem; /* Ajusta o padding dos links */
+        text-align: center; /* Centraliza o texto */
+    }
 }
