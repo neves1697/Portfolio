@@ -1,0 +1,20 @@
+/* Responsividade para mobile */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* muda a direção para coluna em mobile */
+    }
+
+    .foto-perfil {
+        width: 100px; /* tamanho reduzido para mobile */
+        height: 100px; /* tamanho reduzido para mobile */
+        margin-bottom: 20px; /* ajuste de margin para mobile */
+    }
+}
+
+/* Ajustes para telas entre 766px e 1285px */
+@media (min-width: 766px) and (max-width: 1285px) {
+    .container {
+        height: 100vh; /* Mantém a altura para 100% da tela */
+        background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927); /* Garante que a cor de fundo esteja aplicada */
+    }
+}
