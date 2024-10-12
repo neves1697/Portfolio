@@ -14,26 +14,6 @@
     margin-bottom: 20px;
 }
 
-.card-container {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    border-radius: 7px;
-    transition: transform 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.116);
-}
-
 .language-container {
     display: flex;
     justify-content: space-between;
@@ -71,5 +51,15 @@
     }
     100% {
         transform: translateX(-100%); /* Move para fora da tela à esquerda */
+    }
+}
+
+/* Ajustes para telas entre 766px e 1285px */
+@media (min-width: 766px) and (max-width: 1285px) {
+    .container {
+        height: 100vh;
+        /* Mantém a altura para 100% da tela */
+        background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
+        /* Garante que a cor de fundo esteja aplicada */
     }
 }
