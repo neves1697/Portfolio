@@ -1,0 +1,11 @@
+.container-divider {
+    display: flex;
+    justify-content: center;
+}
+
+.divider {
+    border-bottom: rgba(128, 128, 128, 0.089) solid;
+    height: 5px;
+    margin-bottom: 25px;
+    width: 90%;
+}

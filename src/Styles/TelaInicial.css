@@ -14,18 +14,6 @@
     margin-bottom: 20px;
 }
 
-.container-divider {
-    display: flex;
-    justify-content: center;
-}
-
-.divider {
-    border-bottom: rgba(128, 128, 128, 0.144) solid;
-    height: 5px;
-    margin-bottom: 25px;
-    width: 90%;
-}
-
 /* Ajustes para telas entre 766px e 1285px */
 @media (min-width: 766px) and (max-width: 1285px) {
     .container {
