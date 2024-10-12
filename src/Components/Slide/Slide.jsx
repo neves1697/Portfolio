@@ -8,7 +8,6 @@ import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
 import "../../Styles/Slide.css";
 
-
 const Slides = () => {
     const languages = [
         { icon: <SiCsharp size={50} color="purple" />, alt: "C#" },
@@ -37,7 +36,6 @@ const Slides = () => {
                 {/* Duplicando os ícones apenas para a animação */}
                 {languages.map((language, index) => (
                     <div key={index + languages.length} className="language-card">
-
                     </div>
                 ))}
             </div>
