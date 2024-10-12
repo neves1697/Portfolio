@@ -8,10 +8,11 @@
     width: 90%;
     margin-bottom: 25px;
     height: 5px;
-    animation: alternateShades 5s linear infinite;
+    animation: alternarCores 5s linear infinite;
+    border-radius: 100%;
 }
 
-@keyframes alternateShades {
+@keyframes alternarCores {
     0% {
         border-bottom-color: rgba(128, 128, 128, 0.164); /* cor mais escura */
     }
