@@ -14,46 +14,6 @@
     margin-bottom: 20px;
 }
 
-.language-container {
-    display: flex;
-    justify-content: space-between;
-    overflow: hidden; /* Oculta ícones que saem da tela */
-    white-space: nowrap; /* Mantém os ícones em uma única linha */
-    width: 100%; /* Ocupa 100% da largura */
-    position: relative; /* Necessário para posicionamento da animação */
-}
-
-.language-card {
-    display: inline-block;
-    width: 50px;  /* Tamanho do card */
-    height: 50px; /* Tamanho do card */
-    margin: 0 35px; /* Espaçamento entre os cards */
-}
-
-.language-icon {
-    width: 100%; /* O ícone ocupa todo o card */
-    height: 100%; /* O ícone ocupa todo o card */
-}
-
-.language-slider {
-    display: inline-block;
-    animation: slide 80s linear infinite; /* Animação contínua */
-    width: 100%;
-    white-space: nowrap; /* Garante que o conteúdo não quebre linha */
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(100%); /* Começa fora da tela à direita */
-    }
-    50% {
-        transform: translateX(0); /* Posição central */
-    }
-    100% {
-        transform: translateX(-100%); /* Move para fora da tela à esquerda */
-    }
-}
-
 /* Ajustes para telas entre 766px e 1285px */
 @media (min-width: 766px) and (max-width: 1285px) {
     .container {
