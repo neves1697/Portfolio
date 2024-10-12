@@ -3,7 +3,7 @@ import "../../Styles/TelaInicial.css";
 import "../../Styles/Mobile/TelaInicial.css";
 import { IoLogoJavascript } from "react-icons/io5";
 import { BiLogoJava, BiLogoPostgresql } from "react-icons/bi";
-import { SiMysql, SiCsharp, SiPostman, SiOracle, SiExpo } from "react-icons/si";
+import { SiMysql, SiCsharp, SiPostman, SiOracle, SiExpo, SiInsomnia } from "react-icons/si";
 import { FaCss3, FaHtml5, FaReact } from "react-icons/fa";
 import { AiOutlinePython } from "react-icons/ai";
 import "../../Styles/Slide.css";
@@ -18,6 +18,7 @@ const Slides = () => {
         { icon: <FaCss3 size={50} color="#1572B6" />, alt: "CSS" },
         { icon: <IoLogoJavascript size={50} color="yellow" />, alt: "JavaScript" },
         { icon: <SiPostman size={50} color="#FF6A24" />, alt: "Postman" },
+        { icon: <SiInsomnia size={50} color="#5851DB" />, alt: "Insomnia" },
         { icon: <FaReact size={50} color="#61DAFB" />, alt: "React JS" },
         { icon: <SiOracle size={50} color="#F80000" />, alt: "Oracle" },
         { icon: <AiOutlinePython size={50} color="#306998" />, alt: "Python" },

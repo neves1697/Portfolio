@@ -4,8 +4,21 @@
 }
 
 .divider {
-    border-bottom: rgba(128, 128, 128, 0.089) solid;
-    height: 5px;
-    margin-bottom: 25px;
+    border-bottom: 3.5px solid rgba(128, 128, 128, 0.144); /* cor inicial */
     width: 90%;
+    margin-bottom: 25px;
+    height: 5px;
+    animation: alternateShades 5s linear infinite;
+}
+
+@keyframes alternateShades {
+    0% {
+        border-bottom-color: rgba(128, 128, 128, 0.164); /* cor mais escura */
+    }
+    50% {
+        border-bottom-color: rgba(128, 128, 128, 0.5); /* cor mais clara */
+    }
+    100% {
+        border-bottom-color: rgba(128, 128, 128, 0.144); /* volta para a cor mais escura */
+    }
 }
