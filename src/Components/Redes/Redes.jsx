@@ -17,7 +17,7 @@ const Redes = () => {
             </a>
 
             <a href={redes[0].url} title="Github">
-                <FaGithub size={50} color="#171515" />
+                <FaGithub size={50} color="#c6c6c6" />
             </a>
         </div>
     </>
