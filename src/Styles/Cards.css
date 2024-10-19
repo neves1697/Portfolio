@@ -3,7 +3,6 @@
     display: grid;
     gap: 15px;
     width: 60%;
-    height: 100%;
 }
 
 .card:hover {
@@ -16,11 +15,14 @@
     padding: 25px;
     border-radius: 7px;
     transition: transform 0.3s;
+    height: 350px;
+    align-items: center;
+    align-content: center;
 }
 
 .container-principal {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    
+    height: 100%;
 }
