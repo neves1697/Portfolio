@@ -2,7 +2,6 @@ import React from "react";
 import "../../Styles/Cards.css";
 
 const Cards = () => {
-
     const cards = [
         { title: "Sobre Mim", description: "Desenvolvedor Frontend com paixão por criar interfaces incríveis." },
         { title: "Habilidades", description: "React, JavaScript, CSS, HTML, Node.js." },
@@ -13,13 +12,15 @@ const Cards = () => {
     ];
 
     return <>
-        <div className="card-container">
-            {cards.map((card, index) => (
-                <div key={index} className="card">
-                    <h3>{card.title}</h3>
-                    <p>{card.description}</p>
-                </div>
-            ))}
+        <div className="container-principal">
+            <div className="card-container">
+                {cards.map((card, index) => (
+                    <div key={index} className="card">
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                    </div>
+                ))}
+            </div>
         </div>
     </>
 }

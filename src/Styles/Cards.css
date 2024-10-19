@@ -1,9 +1,14 @@
 .card-container {
     margin-top: 35px;
-    display: flex;
-    flex-direction: column;
+    display: grid;
     gap: 15px;
-    
+    width: 60%;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.116);
 }
 
 .card {
@@ -13,7 +18,9 @@
     transition: transform 0.3s;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.116);
+.container-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    
 }
