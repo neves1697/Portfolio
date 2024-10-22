@@ -1,0 +1,33 @@
+.card-container {
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.116);
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    display: flex;
+    border-radius: 7px;
+    transition: transform 0.3s;
+    height: 350px;
+    align-items: center;
+    color: #fff;
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    left: 0;
+    
+}
+
+.container-principal {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    height: 100%;
+}
