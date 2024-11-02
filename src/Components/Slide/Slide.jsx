@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import "../../Styles/TelaInicial.css";
 import "../../Styles/Mobile/TelaInicial.css";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -25,23 +25,47 @@ const Slides = () => {
         { icon: <SiExpo size={50} color="white" />, alt: "Expo" },
     ];
 
-    return <>
+    const sliderRef = useRef(null);
+
+    useEffect(() => {
+        const slider = sliderRef.current;
+        const sliderWidth = slider.offsetWidth / 2; // Metade da largura, pois duplicamos os ícones
+        const duration = 80 * 1000; // 80 segundos em milissegundos
+
+        // Calcula o deslocamento por frame para atingir 80 segundos de duração
+        const pixelsPerFrame = sliderWidth / (duration / (1000 / 60));
+
+        let scrollAmount = 0;
+
+        const animateIcons = () => {
+            scrollAmount -= pixelsPerFrame;
+            if (scrollAmount <= -sliderWidth) {
+                scrollAmount = 0; // Reinicia a posição quando metade dos ícones passou
+            }
+            slider.style.transform = `translateX(${scrollAmount}px)`;
+            requestAnimationFrame(animateIcons);
+        };
+
+        animateIcons(); // Inicia a animação ao montar o componente
+    }, []);
+
+    return (
         <div className="language-container">
-            <div className="language-slider">
-                {/* Renderiza os ícones uma vez para a animação contínua */}
+            <div ref={sliderRef} className="language-slider">
                 {languages.map((language, index) => (
                     <div key={index} className="language-card">
                         {language.icon}
                     </div>
                 ))}
-                {/* Duplicando os ícones apenas para a animação */}
+                {/* Duplicação dos ícones para criar o efeito de loop infinito */}
                 {languages.map((language, index) => (
                     <div key={index + languages.length} className="language-card">
+                        {language.icon}
                     </div>
                 ))}
             </div>
         </div>
-    </>
-}
+    );
+};
 
 export default Slides;
