@@ -1,28 +1,31 @@
-.card-container {
-    margin-top: 35px;
-    display: grid;
-    gap: 15px;
-    width: 60%;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    background: rgba(255, 255, 255, 0.116);
-}
-
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 25px;
-    border-radius: 7px;
-    transition: transform 0.3s;
-    height: 350px;
-    align-items: center;
-    align-content: center;
-}
-
 .container-principal {
+    height: 100vh; /* Faz a altura do container ocupar 100% da altura da tela */
+    overflow: hidden; /* Impede a rolagem no container principal */
     display: flex;
     justify-content: center;
-    flex-direction: row;
-    height: 100%;
+    margin-top: 3%;
+}
+
+.card-container {
+    height: 100vh; /* Faz o container ocupar 100% da altura da tela */
+    overflow-y: scroll; /* Permite a rolagem vertical */
+    scroll-snap-type: y mandatory; /* Ativa o scroll snapping somente aqui */
+    scrollbar-width: none;
+    width: 60%;
+    border-radius: 20px;
+}
+
+.section {
+    scroll-snap-align: start; /* Faz o card "grudar" no início ao rolar */
+    height: 100vh; /* Cada seção ocupa a altura total da tela */
+    display: flex;
+    justify-content: center; /* Centraliza conteúdo horizontalmente */
+    align-items: center; /* Centraliza conteúdo verticalmente */
+    background: rgba(255, 255, 255, 0.1); /* Fundo para melhor visualização */
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1); /* Linha de separação entre seções */
+    border-top: 2px solid rgba(255, 255, 255, 0.1); /* Linha de separação entre seções */
+}
+
+.card-container::-webkit-scrollbar {
+    display: none; /* Para navegadores WebKit (Chrome, Safari) */
 }

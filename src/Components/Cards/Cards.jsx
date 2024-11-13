@@ -1,28 +1,38 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/Cards.css";
 
 const Cards = () => {
     const cards = [
-        { title: "Sobre Mim", description: "Desenvolvedor Frontend com paixão por criar interfaces incríveis." },
-        { title: "Habilidades", description: "React, JavaScript, CSS, HTML, Node.js." },
-        { title: "Contato", description: "Email: exemplo@email.com" },
-        { title: "Projeto", description: "Projeto XYZ em desenvolvimento." },
-        { title: "Experiência", description: "2 anos de experiência em desenvolvimento." },
-        { title: "Educação", description: "Graduado em Ciência da Computação." },
+        { title: "Seção 1", description: "Conteúdo da Seção 1" },
+        { title: "Seção 2", description: "Conteúdo da Seção 2" },
+        { title: "Seção 3", description: "Conteúdo da Seção 3" },
+        { title: "Seção 4", description: "Conteúdo da Seção 4" },
     ];
 
-    return <>
+    useEffect(() => {
+        const container = document.querySelector(".card-container");
+        container.addEventListener("wheel", (e) => {
+            e.preventDefault();
+            container.scrollBy({
+                top: e.deltaY,
+                behavior: "smooth",
+            });
+        });
+    }, []);
+
+    return (
         <div className="container-principal">
             <div className="card-container">
                 {cards.map((card, index) => (
-                    <div key={index} className="card">
+                    <section key={index} className="section">
                         <h3>{card.title}</h3>
                         <p>{card.description}</p>
-                    </div>
+                    </section>
                 ))}
             </div>
         </div>
-    </>
-}
+
+    );
+};
 
 export default Cards;
