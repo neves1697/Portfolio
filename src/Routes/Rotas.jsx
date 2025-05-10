@@ -8,6 +8,7 @@ import Projetos from "../Pages/Projetos/Projetos";
 import TelaInicial from "../Pages/TelaInicial/TelaInicial";
 
 const Rotas = () => {
+    
     return <>
         <Router>
             <Navegacao />
@@ -17,7 +18,7 @@ const Rotas = () => {
                 <Route path="/projetos" element={<Projetos />} />
                 <Route path="/contatos" element={<Contatos />} />
                 <Route path="/experiencias" element={<Experiências />} />
-                <Route path="/inicio" element={<TelaInicial />} />
+                <Route path="/inicio" element={<TelaInicial />}  />
                 
             </Routes>
         </Router>

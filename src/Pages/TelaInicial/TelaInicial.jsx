@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../Styles/TelaInicial.css";
 import "../../Styles/Mobile/TelaInicial.css";
 import FotoPerfil from "../../Assets/foto_perfil.jpg";
@@ -6,8 +6,13 @@ import Cards from "../../Components/Cards/Cards";
 import Slides from "../../Components/Slide/Slide";
 import Divider from "../../Components/Divider/Divider";
 import Redes from "../../Components/Redes/Redes";
+import CardSkills from "../../Components/Cards/CardsSkills";
 
 const TelaInicial = () => {
+
+    useEffect(() => {
+        document.title = "Portfólio";
+    }, [])
 
     return (
         <>
@@ -16,8 +21,9 @@ const TelaInicial = () => {
                 <Redes />
                 <Divider />
                 <Slides />
-                <Cards />
+                <CardSkills />
             </div>
+
         </>
     );
 }
