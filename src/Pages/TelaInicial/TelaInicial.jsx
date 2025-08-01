@@ -22,6 +22,7 @@ const TelaInicial = () => {
                 <Divider />
                 <Slides />
                 <CardSkills />
+                <p>Teste</p>
             </div>
 
         </>
