@@ -1,12 +1,12 @@
 /* Responsividade para mobile */
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column; /* muda a direção para coluna em mobile */
-    }
+  .container {
+    flex-direction: column; /* muda a direção para coluna em mobile */
+  }
 
-    .foto-perfil {
-        width: 100px; /* tamanho reduzido para mobile */
-        height: 100px; /* tamanho reduzido para mobile */
-        margin-bottom: 20px; /* ajuste de margin para mobile */
-    }
+  .foto-perfil {
+    width: 100px; /* tamanho reduzido para mobile */
+    height: 100px; /* tamanho reduzido para mobile */
+    margin-bottom: 20px; /* ajuste de margin para mobile */
+  }
 }

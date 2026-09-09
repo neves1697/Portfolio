@@ -1,10 +1,10 @@
-.redes{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 15px;
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
-.redes:hover{
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.13); /* sombra suave */
+.redes:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.13); /* sombra suave */
 }

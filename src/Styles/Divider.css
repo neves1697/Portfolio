@@ -1,25 +1,30 @@
 .container-divider {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .divider {
-    border-bottom: 3.5px solid rgba(128, 128, 128, 0.144); /* cor inicial */
-    width: 90%;
-    margin-bottom: 25px;
-    height: 5px;
-    animation: alternarCores 5s linear infinite;
-    border-radius: 100%;
+  border-bottom: 3.5px solid rgba(128, 128, 128, 0.144); /* cor inicial */
+  width: 90%;
+  margin-bottom: 25px;
+  height: 5px;
+  animation: alternarCores 5s linear infinite;
+  border-radius: 100%;
 }
 
 @keyframes alternarCores {
-    0% {
-        border-bottom-color: rgba(128, 128, 128, 0.164); /* cor mais escura */
-    }
-    50% {
-        border-bottom-color: rgba(128, 128, 128, 0.5); /* cor mais clara */
-    }
-    100% {
-        border-bottom-color: rgba(128, 128, 128, 0.144); /* volta para a cor mais escura */
-    }
+  0% {
+    border-bottom-color: rgba(128, 128, 128, 0.164); /* cor mais escura */
+  }
+  50% {
+    border-bottom-color: rgba(128, 128, 128, 0.5); /* cor mais clara */
+  }
+  100% {
+    border-bottom-color: rgba(
+      128,
+      128,
+      128,
+      0.144
+    ); /* volta para a cor mais escura */
+  }
 }

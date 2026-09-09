@@ -1,20 +1,20 @@
 .language-container {
-    display: flex;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    position: relative;
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
 }
 
 .language-card {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0 35px;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin: 0 35px;
 }
 
 .language-slider {
-    display: inline-flex;
-    white-space: nowrap;
-    will-change: transform;
+  display: inline-flex;
+  white-space: nowrap;
+  will-change: transform;
 }

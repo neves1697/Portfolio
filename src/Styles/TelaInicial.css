@@ -1,26 +1,26 @@
 .container {
-    background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
-    color: white;
-    padding: 20px;
-    width: 100%;
-    height: 100vh;
-    text-align: center;
+  background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
+  color: white;
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  text-align: center;
 }
 
 .foto-perfil {
-    width: 150px;
-    height: 150px;
-    margin-top: 70px;
-    border-radius: 50%;
-    margin-bottom: 20px;
+  width: 150px;
+  height: 150px;
+  margin-top: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
 
 /* Ajustes para telas entre 766px e 1285px */
 @media (min-width: 766px) and (max-width: 1285px) {
-    .container {
-        height: 100vh;
-        /* Mantém a altura para 100% da tela */
-        background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
-        /* Garante que a cor de fundo esteja aplicada */
-    }
+  .container {
+    height: 100vh;
+    /* Mantém a altura para 100% da tela */
+    background: linear-gradient(to bottom, rgba(34, 32, 32, 0.966), #031927);
+    /* Garante que a cor de fundo esteja aplicada */
+  }
 }
