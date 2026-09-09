@@ -1,37 +1,12 @@
-import React from "react";
-import "../../Styles/Navegacao.css"
-import { Link, useLocation } from "react-router-dom";
-
-const Navegacao = () => {
-    const location = useLocation();
-
-    return <>
-        <nav className="nav">
-            <Link to={"/inicio"} className={location.pathname === "/inicio" ? "active" : ""}>Início</Link>
-            <ul>
-                <li>
-                    <Link to={"/projetos"}
-                        className={location.pathname === "/projetos" ? "active" : ""} > Projetos
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/experiencias"}
-                        className={location.pathname === "/experiencias" ? "active" : ""}> Experiências
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/sobre"}
-                        className={location.pathname === "/sobre" ? "active" : ""} >Sobre mim
-                    </Link>
-                </li>
-                <li>
-                    <Link to={"/contatos"}
-                        className={location.pathname === "/contatos" ? "active" : ""} >Contatos
-                    </Link>
-                </li>
-            </ul>
-        </nav>
-    </>
+import { useEffect, useRef, useState } from 'react';
+import { Link, NavLink, useLocation } from 'react-router-dom';
+import { FiArrowUpRight, FiMenu, FiX } from 'react-icons/fi';
+import { profile } from '../../data/portfolio';
+export default function Navegacao() {
+  const [open, setOpen] = useState(false);
+  const { pathname } = useLocation();
+  const toggle = useRef(null);
+  useEffect(() => { setOpen(false); }, [pathname]);
+  const links = [['/inicio', 'Início'], ['/projetos', 'Projetos'], ['/experiencias', 'Experiências'], ['/sobre', 'Sobre Mim'], ['/contatos', 'Contatos']];
+  return <header className="site-header" onKeyDown={event => { if (event.key === 'Escape' && open) { setOpen(false); toggle.current?.focus(); } }}><div className="header-inner shell"><Link className="brand" to="/inicio" aria-label="Anderson Neves — Início">an<span>.</span></Link><button ref={toggle} className="menu-toggle" aria-expanded={open} aria-controls="main-navigation" aria-label={open ? 'Fechar menu' : 'Abrir menu'} onClick={() => setOpen(!open)}>{open ? <FiX /> : <FiMenu />}</button><nav id="main-navigation" className={`main-navigation ${open ? 'is-open' : ''}`} aria-label="Navegação principal">{links.map(([to, label]) => <NavLink key={to} to={to}>{label}</NavLink>)}</nav><a className="header-contact" href={profile.linkedin} target="_blank" rel="noopener noreferrer">Vamos conversar <FiArrowUpRight /></a></div></header>;
 }
-
-export default Navegacao;

@@ -1,11 +1,7 @@
-import React from "react";
-
-const Contatos = () =>{
-    return <>
-        <div>
-            <p>Contatos</p>
-        </div>
-    </>
+import { FiArrowUpRight, FiMessageSquare } from 'react-icons/fi';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { PageIntro } from '../../Components/Portfolio/Shared';
+import { profile } from '../../data/portfolio';
+export default function Contatos() {
+  return <><PageIntro number="05" label="CONTATOS" title={<>Vamos conversar<span>?</span></>}>Uma oportunidade, uma ideia ou uma troca sobre tecnologia. Você pode me encontrar nos canais abaixo.</PageIntro><section className="contact-layout" aria-label="Canais de contato"><div className="contact-message"><div className="contact-message-icon"><FiMessageSquare /></div><h2>Boas conexões<br />abrem novos caminhos.</h2><p>Para conversar sobre minha trajetória ou oportunidades profissionais, me encontre no LinkedIn. Para conhecer meus projetos, visite o GitHub.</p><div className="contact-signature"><span className="brand">an<span>.</span></span><div><strong>{profile.name}</strong><span>{profile.role}</span></div></div></div><div className="contact-channels"><a className="contact-card" href={profile.linkedin} target="_blank" rel="noopener noreferrer"><span className="channel-icon"><FaLinkedinIn /></span><div><span className="eyebrow">CONEXÕES PROFISSIONAIS</span><h2>LinkedIn</h2><p>Vamos falar sobre tecnologia e oportunidades.</p><span className="text-link">Conectar no LinkedIn <FiArrowUpRight /></span></div></a><a className="contact-card" href={profile.github} target="_blank" rel="noopener noreferrer"><span className="channel-icon"><FaGithub /></span><div><span className="eyebrow">PROJETOS & CÓDIGO</span><h2>GitHub</h2><p>Explore meus repositórios e estudos.</p><span className="text-link">Visitar @neves1697 <FiArrowUpRight /></span></div></a></div></section></>;
 }
-
-export default Contatos;

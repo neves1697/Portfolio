@@ -1,38 +1,7 @@
-import React from "react";
-import "../../Styles/TelaInicial.css";
-import { Link } from "react-router-dom";
-
-const Projetos = () => {
-    const cardData = [
-        {
-            title: "Projeto 1",
-            description: "Descrição do projeto 1",
-        },
-        {
-            title: "Projeto 2",
-            description: "Descrição do projeto 2",
-        },
-        {
-            title: "Projeto 3",
-            description: "Descrição do projeto 3",
-        },
-    ];
-
-    return <>
-        <div>
-            <p>Projetos</p>
-            {/* Seção dos cards */}
-            <div className="card-container">
-                <p>teste</p>
-                {cardData.map((card, index) => (
-                    <div className="card" key={index}>
-                        <h3>{card.title}</h3>
-                        <p>{card.description}</p>
-                    </div>
-                ))}
-            </div>
-        </div>
-    </>
+import { FiArrowUpRight } from 'react-icons/fi';
+import { FaGithub } from 'react-icons/fa';
+import { ContactBanner, PageIntro, ProjectCard } from '../../Components/Portfolio/Shared';
+import { profile, projects } from '../../data/portfolio';
+export default function Projetos() {
+  return <><PageIntro number="02" label="PROJETOS" title={<>Conhecimento em prática<span>.</span></>}>Uma seleção dos meus projetos de desenvolvimento e estudos. Cada repositório conta um pouco desse caminho.</PageIntro><div className="project-list-heading"><span>{String(projects.length).padStart(2, '0')} projetos selecionados</span><a className="text-link" href={`${profile.github}?tab=repositories`} target="_blank" rel="noopener noreferrer"><FaGithub /> Todos no GitHub <FiArrowUpRight /></a></div><section className="projects-grid all-projects" aria-label="Projetos selecionados">{projects.map(project => <ProjectCard project={project} key={project.id} />)}</section><ContactBanner /></>;
 }
-
-export default Projetos;

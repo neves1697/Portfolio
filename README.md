@@ -1,72 +1,28 @@
-# Portfolio 
+# Portfólio — Anderson Neves
 
-Projeto de Portfolio criado em React
+Portfólio em React com as páginas Início, Projetos, Experiências, Sobre Mim e Contatos. A apresentação destaca o cargo de Analista de Suporte Nível 3.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Desenvolvimento
 
-## Available Scripts
+- `npm start`: inicia o ambiente local.
+- `npm test -- --watchAll=false`: executa os testes de navegação, acessibilidade do menu e contatos.
+- `npm run build`: gera a versão de produção em `build/`, respeitando o endereço do GitHub Pages definido em `package.json`.
+- `npm run deploy`: mantém o fluxo existente de publicação no GitHub Pages.
 
-In the project directory, you can run:
+A navegação usa fragmentos (`#/projetos`), permitindo abrir e atualizar qualquer aba em hospedagens estáticas, inclusive no subdiretório `/Portfolio`.
 
-### `npm start`
+## Personalização
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- `src/data/portfolio.js`: nome, cargo, contatos e projetos.
+- `src/Pages/Experiencias/Experiencias.jsx`: trajetória. Empresas, datas e resultados não foram preenchidos sem confirmação.
+- `src/Pages/Sobre/Sobre.jsx`: apresentação e tecnologias.
+- `src/App.css` e `src/index.css`: identidade visual e adaptações para telas menores.
+- `src/Assets/foto_perfil.jpg`: imagem original, preservada e enquadrada por CSS.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Os projetos e a formação foram selecionados a partir do perfil público https://github.com/neves1697. O programa DIO Campus Expert está identificado na imagem existente. O cargo foi informado pelo proprietário. Revise e complemente essas informações quando necessário.
 
-### `npm test`
+## Publicação privada com Sites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+`.openai/hosting.json` identifica o Site e a saída estática `build`. Para publicar na raiz de outro domínio sem alterar o endereço do GitHub Pages, gere o build com `PUBLIC_URL=.`. No PowerShell: `$env:PUBLIC_URL='.'` e, em seguida, `npm run build`.
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Não há formulário nem envio de mensagens pelo site: os contatos abrem os perfis existentes no LinkedIn e GitHub.
