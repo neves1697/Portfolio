@@ -47,7 +47,7 @@ export default function Experiencias() {
             <p className="eyebrow">ATUAÇÃO PROFISSIONAL</p>
             <h2>{profile.role}</h2>
             <p>
-              Suporte técnico como ponto de encontro entre a análise de
+              Referência técnica da equipe, atuando como ponto de encontro entre a análise de
               sistemas, a investigação de problemas e as necessidades de quem
               usa a tecnologia.
             </p>
@@ -61,18 +61,38 @@ export default function Experiencias() {
             <span className="timeline-icon">
               <FiUsers />
             </span>
-            <p className="eyebrow">COMUNIDADE & APRENDIZADO</p>
-            <h2>DIO Campus Expert</h2>
-            <p>
-              Participação no programa de embaixadores da DIO, conectando
-              aprendizado em tecnologia e comunidade.
-            </p>
+
+            <p className="eyebrow">COMUNIDADES & APRENDIZADOS</p>
+            <li>
+              <h2>DIO Campus Expert</h2>
+              <p>
+                Participação no programa de embaixadores da DIO, conectando
+                aprendizado em tecnologia e comunidade.
+              </p>
+            </li>
+
+            <li>
+              <h2>DEVParaná</h2>
+              <p>
+                O DevParaná é uma comunidade sem fins lucrativos que conecta pessoas desenvolvedoras de software em todo o estado do Paraná. Desde 2015, promove meetups, workshops, hackathons e o evento itinerante DevParaná na Estrada.
+              </p>
+            </li>
+
+            <li>
+              <h2>Pipoca Ágil</h2>
+              <p>
+                Paricipação no programa Pipoca Ágil.
+                A Simulação de Projetos Ágeis é um programa do Podcast Pipoca Ágil que oferece experiência prática em Agilidade. Os participantes trabalham em equipes, assistem a workshops e mentorias e participam de cerimônias Scrum enquanto desenvolvem produtos digitais, vivenciando desafios parecidos com os do ambiente corporativo.
+              </p>
+            </li>
+
             <div className="tags">
               <span>Comunidade</span>
               <span>Tecnologia</span>
               <span>Aprendizado contínuo</span>
             </div>
           </article>
+
         </div>
       </section>
       <section className="knowledge-section">

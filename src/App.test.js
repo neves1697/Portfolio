@@ -60,7 +60,12 @@ test("opens direct project links and recovers unknown addresses", async () => {
       name: /Conhecimento em prática/i,
     }),
   ).toBeInTheDocument();
-  expect(screen.getAllByRole("article")).toHaveLength(4);
+  expect(screen.getAllByRole("article")).toHaveLength(5);
+  expect(
+    screen.getByRole("link", {
+      name: /Ver Controle de Ausências no GitHub/i,
+    }),
+  ).toHaveAttribute("href", "https://github.com/neves1697/controle_ausencias");
   unmount();
   window.location.hash = "#/pagina-inexistente";
   render(<App />);

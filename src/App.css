@@ -473,6 +473,17 @@ h2 > span {
 .database .project-open {
   color: #8dd5cb;
 }
+.absence .project-art {
+  background-color: #25273b;
+}
+.absence .project-symbol,
+.absence .project-open {
+  color: #aeb9ff;
+}
+.absence .project-art-label,
+.absence .project-number {
+  color: #cbd2ff;
+}
 .project-copy {
   padding: 26px;
 }

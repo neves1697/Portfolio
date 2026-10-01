@@ -4,6 +4,7 @@ import {
   FiArrowRight,
   FiCode,
   FiDatabase,
+  FiMonitor,
 } from "react-icons/fi";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { profile } from "../../data/portfolio";
@@ -46,15 +47,18 @@ export function ProjectCard({ project }) {
       >
         <div className="project-art" aria-hidden="true">
           <span className="project-number">PROJETO / {project.number}</span>
-          {project.style === "database" ? (
+          {project.icon === "webpage" ? (
+            <FiMonitor className="project-symbol" />
+          ) : project.style === "database" ? (
             <FiDatabase className="project-symbol" />
           ) : (
             <FiCode className="project-symbol" />
           )}
           <span className="project-art-label">
-            {project.style === "database"
-              ? "dados → possibilidades"
-              : "< ideias em código />"}
+            {project.artLabel ||
+              (project.style === "database"
+                ? "dados → possibilidades"
+                : "< ideias em código />")}
           </span>
           <span className="project-open">
             <FiArrowUpRight />

@@ -18,15 +18,17 @@ export const projects = [
     style: "web",
   },
   {
-    id: "sql",
+    id: "controle-ausencias",
     number: "02",
-    title: "SQLGenerator",
-    category: "BANCO DE DADOS",
+    title: "Controle de Ausências",
+    category: "DESENVOLVIMENTO WEB",
     description:
-      "Projeto dedicado à geração de SQL. Uma conexão entre desenvolvimento e meu interesse por bancos de dados.",
+      "Esta aplicação foi criada para resolver um problema real da empresa que atuo e e está em uso pelo time de coordenação. Serve para registrar as ausências de colaboradores (por motivos pessoais, de saúde, folgas, entre outros) em um único lugar. A gestão costumava controlar isso por conta própria, com planilhas, blocos de notas ou lembretes, o que era demorado e se perdia entre outros arquivos e compromissos do dia. Centralizando tudo na aplicação, o processo fica mais simples e é possível consultar o histórico das ausências, com motivos, observações, datas e dados gerenciais.",
     tags: ["JavaScript", "SQL"],
-    url: "https://github.com/neves1697/SQLGenerator",
-    style: "database",
+    url: "https://github.com/neves1697/controle_ausencias",
+    style: "absence",
+    icon: "webpage",
+    artLabel: "Gestão de Ausências dos colaboradores",
   },
   {
     id: "carteira",
@@ -49,5 +51,16 @@ export const projects = [
     tags: ["JavaScript", "React Native"],
     url: "https://github.com/neves1697/Alura-ReactNative-APIs",
     style: "mobile",
+  },
+  {
+    id: "sql",
+    number: "05",
+    title: "SQLGenerator",
+    category: "BANCO DE DADOS",
+    description:
+      "Projeto dedicado à geração de SQL e unificação dos links de acessos e documentações da empresa que atuo, funcionando como um portal unificado de acessos e outras ferrammentas criadas pelos colaboradores.",
+    tags: ["JavaScript", "SQL"],
+    url: "https://github.com/neves1697/SQLGenerator",
+    style: "database",
   },
 ];

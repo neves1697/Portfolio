@@ -74,10 +74,6 @@ export default function Sobre() {
             projetos que compartilho. Este portfólio reúne essas experiências e
             abre espaço para novas conexões.
           </p>
-          <p>
-            Também faço parte da história do DIO Campus Expert, uma experiência
-            que conecta tecnologia, educação e comunidade.
-          </p>
           <div className="education-note">
             <FiBookOpen />
             <div>
