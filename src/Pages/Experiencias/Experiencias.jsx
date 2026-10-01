@@ -48,7 +48,7 @@ export default function Experiencias() {
             <h2>{profile.role}</h2>
             <p>
               Referência técnica da equipe, atuando como ponto de encontro entre a análise de
-              sistemas, a investigação de problemas e as necessidades de quem
+              sistemas voltados ao agronegócio, conexão com outros times, a investigação e antecipação de problemas e as necessidades de quem
               usa a tecnologia.
             </p>
             <div className="tags">

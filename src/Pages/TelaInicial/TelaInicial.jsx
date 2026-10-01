@@ -43,6 +43,8 @@ export default function TelaInicial() {
             <br />
             Um olhar analítico para resolver problemas e transformar
             conhecimento em soluções.
+            <br />
+            Atuo como Analista de Suporte Nível 3 em CRM voltado ao Agronegócio.
           </p>
           <div className="hero-actions">
             <Link to="/projetos" className="button button-primary">
