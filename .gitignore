@@ -13,10 +13,37 @@
 
 # misc
 .DS_Store
+
+# variáveis de ambiente e dados sensíveis
+.env
+.env.*
+!.env.example
+!.env.*.example
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
+
+# chaves, certificados e credenciais locais
+.openai/
+*.pem
+*.key
+*.p12
+*.pfx
+*.keystore
+id_rsa
+id_ed25519
+.netrc
+.npmrc
+credentials/
+secrets/
+credential*.json
+credentials*.json
+secret*.json
+secrets*.json
+service-account*.json
+service_account*.json
+firebase-adminsdk-*.json
 
 npm-debug.log*
 yarn-debug.log*
